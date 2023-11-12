@@ -21,8 +21,9 @@
 
 .burger-head {
     display: flex;
+    margin-top: 20px;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .burger-modal-close-btn {
@@ -35,12 +36,12 @@
 
 .burger-list {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .burger-item {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--light-text-color);
     transition: 0.3ms;
 }
