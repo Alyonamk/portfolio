@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".burger-menu"),t=document.querySelector(".burger-modal-open"),n=document.querySelector(".burger-modal-close-btn");document.getElementById("home"),document.getElementById("how-made"),document.getElementById("contacts"),document.getElementById("products");t.addEventListener("click",(function(){e.classList.remove("is-hidden"),e.classList.add("open")})),n.addEventListener("click",(function(){e.classList.add("is-hidden"),e.classList.remove("open")}))}();
-//# sourceMappingURL=index.55c62854.js.map

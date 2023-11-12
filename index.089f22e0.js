@@ -1,2 +1,0 @@
-const e=document.querySelector(".burger-menu"),t=document.querySelector(".burger-modal-open"),d=document.querySelector(".burger-modal-close-btn");document.getElementById("home"),document.getElementById("how-made"),document.getElementById("contacts"),document.getElementById("products");t.addEventListener("click",(()=>{e.classList.remove("is-hidden"),e.classList.add("open")})),d.addEventListener("click",(()=>{e.classList.add("is-hidden"),e.classList.remove("open")}));
-//# sourceMappingURL=index.089f22e0.js.map
