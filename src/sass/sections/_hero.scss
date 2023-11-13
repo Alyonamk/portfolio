@@ -1,18 +1,21 @@
 .hero {
-    padding-top: 80px;
+    display: flex;
+    padding: 45px 0;
     background-color: var(--main-background);
-    height: 440px;
-    // filter: blur(5px);
+
 }
 
-.hero-section {
-    display: flex;
+
+.box-decoration {
+    max-width: 100%;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.068);
+    border: 2px solid rgba(255, 255, 255, 0.174);
+    border-radius: 0.6em;
     flex-direction: column;
-
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        flex-direction: column;
-    }
-
+    display: flex;
+    padding: 45px 25px;
+    box-shadow: -2px -2px 3px #3a6b4b, 2px 2px 3px rgba(194, 190, 105, 0.361);
 }
 
 .hero-info {
@@ -20,9 +23,15 @@
     justify-content: space-between;
 }
 
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .hero-title {
-    font-family: 'Seymour One', sans-serif;
+    // font-family: 'Lobster', sans-serif;
     font-size: 38px;
     line-height: 1.27;
     text-transform: uppercase;
@@ -39,12 +48,14 @@
 }
 
 .products-link {
-    border: 2px solid var(--accent-color);
+    font-size: 24px;
+    // border: 2px solid;
+    box-shadow: inset -2px -2px 5px rgba(179, 138, 89, 0.589), inset 2px 2px 5px #b38a599c;
     border-radius: 10px;
     margin-right: 12px;
     padding: 12px 34px;
     color: var(--light-text-color);
-    width: 256px;
+    // width: 256px;
 
     @media screen and (min-width: 320px) and (max-width: 1199px) {
         margin-right: 8px;
@@ -53,20 +64,27 @@
 }
 
 .how-made-link {
-    font-family: 'Seymour One', sans-serif;
+    font-family: 'Lobster', sans-serif;
     font-size: 36px;
     padding: 28px 0px;
     color: var(--accent-color);
 }
 
-// .hero-img-block {
-//     display: flex;
-//     align-items: center;
-//     gap: 14px;
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//     @media screen and (max-width: 767px) {
-//         display: none;
-//     }
-// }
+    border-radius: 50px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.photo {
+    border-radius: 50%;
+    height: 350px;
+    width: 300px;
+}
 
 
