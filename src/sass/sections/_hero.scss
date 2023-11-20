@@ -56,13 +56,13 @@
 
 .products-link {
     font-size: 24px;
-    // border: 2px solid;
     box-shadow: inset -2px -2px 5px rgba(179, 138, 89, 0.589), inset 2px 2px 5px #b38a599c;
     border-radius: 10px;
     margin-right: 12px;
     padding: 12px 34px;
-    color: var(--light-text-color);
-    // width: 256px;
+    color: var(--dark-text-color);
+    text-shadow: 1px 1px 2px var(--dark-text-color), 0 0 1em var(--dark-text-color);
+    max-width: 300px;
 
     @media screen and (min-width: 320px) and (max-width: 1199px) {
         margin-right: 8px;
@@ -80,8 +80,6 @@
 .hero-img {
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
     margin: 0 30px;
 
     @media screen and (max-width: 767px) {
@@ -96,7 +94,6 @@
     filter: drop-shadow(2px 2px 25px var(--main-background));
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // border-radius: 50%;
         height: 230px;
         width: 250px;
     }
