@@ -1,24 +1,18 @@
 .burger-menu {
-    position: fixed;
-    z-index: 2000;
+    position: absolute;
+    z-index: 20;
     top: 0;
+    bottom: 0;
     right: 0;
     backdrop-filter: blur(40px);
-    width: 80%;
+    width: 75%;
     height: 100%;
-    
-    // transition: width 1s linear;
-    // overflow: hidden;
-    @media screen and (min-width: 787px) {
+    overflow: hidden;
+    transition: all 0.3s linear;
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
-
-
-// .burger-menu:hover {
-//     width: 60%;
-    
-// }
 
 .is-hidden {
     display: block;
@@ -46,8 +40,6 @@
     font-weight: 600;
     font-size: 30px;
     transition: all 0.2s linear;
-
-    
 }
 
 

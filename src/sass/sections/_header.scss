@@ -40,13 +40,14 @@
     color: var(--light-text-color);
     transition: 0.3s;
     text-shadow: 4px 6px 6px rgb(0, 0, 0);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        text-shadow: 4px 6px 6px rgb(0, 0, 0);
+    }
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-    text-shadow: 4px 6px 6px rgb(0, 0, 0);
-}
+
 
 
 .burger-btn {
