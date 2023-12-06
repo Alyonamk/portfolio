@@ -94,8 +94,8 @@
     display: inherit;
     font-size: 40px;
     color: var(--accent-color);
-    animation: my-name 3s infinite;
-    // animation-iteration-count: 4;
+    animation: my-name 3s;
+    animation-iteration-count: 4;
     animation-delay: calc(.1s * var(--i));
 }
 
@@ -108,7 +108,7 @@
     }
 
     20% {
-        transform: translateY(-12px)
+        transform: translateY(-10px)
     }
 }
 
@@ -128,8 +128,7 @@
     border-radius: 50%;
     height: 310px;
     width: 260px;
-    filter: drop-shadow(5px 5px 15px var(--main-background));
-
+    box-shadow: -4px -4px 15px var(--main-background), 5px 5px 15px var(--main-background);
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         height: 250px;
         width: 250px;
