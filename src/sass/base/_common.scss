@@ -40,8 +40,13 @@ body {
     line-height: 1.75;
     letter-spacing: 0.04em;
     margin: 0;
-    color: var(--dark-text-color);
+    // color: var(--dark-text-color);
     width: 100vw;
+}
+
+button {
+    font-family: inherit;
+    user-select: none;
 }
 
 .no-scroll {

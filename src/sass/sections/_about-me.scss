@@ -1,7 +1,149 @@
-.wer {
-    color: aqua;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about-section {
+    background: var(--light-text-color);
+}
+
+.about-text {
+    width: 50%;
+    padding: 0 15px;
+    font-size: 20px;
 }
 
 .info {
-    background-color: red;
+    background-color: var(--disabled);
+    border: 1px solid var(--rights-reserved);
 }
+.about-text .skills {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-text .skill-item {
+    background-color: var(--disabled);
+    border: 1px solid var(--rights-reserved);
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+}
+
+.about-text .tab-content {
+    padding: 40px 0;
+    display: none;
+}
+
+.about-text .tab-content.active {
+    display: block;
+}
+
+.description {
+    width: 50%;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+
+.about-tabs {
+    margin-top: 20px;
+}
+
+.about-tabs .tab-item {
+    display: inline-block;
+    position: relative;
+    opacity: .7;
+    transition: all .3s ease;
+    padding: 2px 0;
+    margin: 0 30px 0 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--main-background);
+}
+
+.about-tabs .tab-item:last-child {
+    margin: 0;
+}
+
+.about-tabs .tab-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.about-tabs .tab-item:hover::before {
+    width: 100%;
+}
+
+.about-tabs .tab-item.active::before {
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.about-tabs .tab-item.active {
+    color: var(--main-background);
+    opacity: 1;
+    cursor: auto;
+}
+
+// education/experience
+.about-text .timeline {
+    position: relative;
+}
+
+.about-text .timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: var(--accent-color);
+}
+.about-text .timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+}
+.about-text .timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.about-text .timeline-item .date {
+    display: block;
+    color: var(--main-background);
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.about-text .timeline-item h4 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.about-text .timeline-item h4 span {
+    font-weight: 400;
+}
+
+.about-text .timeline-item::before {
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: var(--accent-color);
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+}
+
+// Experience
+
