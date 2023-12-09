@@ -1,0 +1,2 @@
+!function(){var t=document.querySelector(".about-tabs"),e=document.querySelector(".about-section");t.addEventListener("click",(function(a){if(a.target.classList.contains("tab-item")&&!a.target.classList.contains("active")){t.querySelector(".active").classList.remove("active"),a.target.classList.add("active");var c=a.target.getAttribute("data-target");e.querySelector(".tab-content.active").classList.remove("active"),e.querySelector(c).classList.add("active")}}))}();
+//# sourceMappingURL=index.4ad45e0b.js.map
