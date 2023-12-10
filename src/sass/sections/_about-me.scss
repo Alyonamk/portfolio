@@ -1,3 +1,9 @@
+.qazx {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +16,12 @@
 
 .about-text {
     width: 50%;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.about-description {
+    // width: 50%;
     padding: 0 15px;
     font-size: 20px;
 }
