@@ -4,7 +4,7 @@
 }
 
 
-.about-name {
+.about-title {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -13,15 +13,20 @@
     font-size: 30px;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
     margin-left: 10%;
-    padding-top: 20px;
+    padding: 40px 0;
 
     &::before {
         content: '';
         width: 80px;
         height: 2px;
         background-color: var(--main-background);
-        transform: translateY(150%);
+        transform: translateY(100%);
         box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        gap: 20px;
     }
 
 }
@@ -30,40 +35,45 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+    gap: 70px;   
     
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
-.about-info {
+.about-text {
     width: 50%;
-    padding: 0 15px;
+    padding: 10px 25px;
     font-size: 20px;
-    background-color: var(--disabled);
-    border: 1px solid var(--rights-reserved);
+    background: rgba(17, 62, 33, 0.454);
+    border: 2px solid rgba(17, 62, 33, 0.443);
+    border-radius: 0.5em;
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
 }
 
 .about-description {
     width: 50%;
-    padding: 0 15px;
     font-size: 20px;
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
 }
 
-.about-text .tab-content {
-    padding: 40px 0;
+.about-info .tab-content {
+    padding: 20px 0;
     display: none;
+    
 }
 
-.about-text .tab-content.active {
+.about-info .tab-content.active {
     display: block;
-}
-
-.description {
-    width: 50%;
-    padding: 0 15px;
-    font-size: 20px;
-}
-
-.about-tabs {
-    margin-top: 20px;
 }
 
 .about-tabs .tab-item {
@@ -107,7 +117,7 @@
 }
 
 // education/experience
-.about-text .timeline {
+.about-info .timeline {
     position: relative;
 
     &::before {
@@ -121,8 +131,8 @@
     }
 }
 
-.about-text .timeline-item {
-    margin-bottom: 30px;
+.about-info .timeline-item {
+    margin-bottom: 15px;
     position: relative;
     padding: 10px 0 0 40px;
     
@@ -142,19 +152,25 @@
     }
 }
 
-.about-text .timeline-item .date {
-    display: block;
-    color: var(--main-background);
-    font-weight: 400;
-    margin: 0 0 10px;
+.date {
+    background-color: rgba(179, 138, 89, 0.374);
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
 }
 
-.about-text .timeline-item h4 {
+.about-info .timeline-item .date {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+
+.about-info .timeline-item h4 {
     font-size: 18px;
     margin: 0 0 10px;
 }
 
-.about-text .timeline-item h4 span {
+.about-info .timeline-item h4 span {
     font-weight: 400;
 }
 
