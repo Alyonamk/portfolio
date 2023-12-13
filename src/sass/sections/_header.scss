@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--main-background);
+    background-color: var(--main-color);
     border-bottom: 2px solid rgba(96, 101, 99, 0.652);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .menu-link {
-    color: var(--light-text-color);
+    color: var(--light-color);
     transition: 0.3s;
     text-shadow: 4px 6px 6px rgb(0, 0, 0);
     &:hover,
@@ -47,7 +47,7 @@
 }
 
 .burger-btn {
-    background-color: var(--main-background);
+    background-color: var(--main-color);
     border-width: 0;
     margin-left: auto;
     position: relative;
