@@ -1,8 +1,9 @@
 
 .about-section {
     background: var(--light-color);
+    padding-bottom: 40px;
+    
 }
-
 
 .about-title {
     display: flex;
@@ -51,6 +52,7 @@
     background: rgba(17, 62, 33, 0.454);
     border: 2px solid rgba(17, 62, 33, 0.443);
     border-radius: 0.5em;
+    font-weight: bold;
 
     @media screen and (max-width: 767px) {
         width: 90%;
