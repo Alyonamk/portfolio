@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".slider-project"),t=document.querySelectorAll(".controlls");let l=0;function c(t){e[l].classList.remove("active"),e[t].classList.add("active"),l=t}t.forEach((t=>{t.addEventListener("click",(()=>{if(event.target.classList.contains("prev")){let t=l-1;t<0&&(t=e.length-1),c(t)}else if(event.target.classList.contains("next")){let t=l+1;t>=e.length&&(t=0),c(t)}}))})),c(l);
+//# sourceMappingURL=index.bc603ebc.js.map
