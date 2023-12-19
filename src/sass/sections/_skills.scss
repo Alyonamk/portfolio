@@ -1,19 +1,6 @@
-.skills-list{
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill-item {
-    background-color: var(--second-color);
-    border: 1px solid var(--decoration-color);
-    border-radius: 20px;
-    padding: 5px 15px;
-    margin: 0 10px 10px 0;
-}
 .section-skills {
     background: var(--second-color);
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .skill-title {
@@ -26,7 +13,7 @@
     font-size: 30px;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
     margin-right: 12%;
-    padding: 40px 0;
+    padding: 50px 0;
 
     &::after {
         content: '';
@@ -45,11 +32,73 @@
 }
 
 
-// .my-element {
-//     // margin: 0 0.5rem;
+// project
 
-//     animation: jello;
-//     /* referring directly to the animation's @keyframe declaration */
-//     animation-duration: 2s;
-//     /* don't forget to set a duration! */
-// }
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    // position: absolute;
+
+    &:hover> :not(:hover) {
+        opacity: .4;
+        transform: scale(0.9);
+        background-color: var(--main-color);
+        border-radius: 15px;
+        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, .23);
+        box-shadow: -3px -3px 7px #626161, 3px 3px 5px #6a6968;
+        
+    }
+
+}
+
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    width: 160px;
+    height: 160px;
+    transition: .35s;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+    // border-radius: 40px;
+
+    &:hover .skill-description {
+        transform: translateY(0);
+    }
+
+    // img {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 80px;
+    //     height: 80px;
+    // }
+}
+
+.skill-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    background: var(--light-color);
+    position: absolute;
+    height: calc(100% + 1px);
+    width: inherit;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+    box-shadow: -3px -3px 7px var(--decoration-color);
+}

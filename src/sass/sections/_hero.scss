@@ -93,7 +93,7 @@
     font-size: 40px;
     color: var(--accent-color);
     animation: my-name 3s;
-    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
     animation-delay: calc(.1s * var(--i));
 }
 
