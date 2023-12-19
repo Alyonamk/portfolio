@@ -7,8 +7,11 @@
     backdrop-filter: blur(40px);
     width: 80%;
     height: 100%;
-    overflow: hidden;
-    transition: all 0.3s linear;
+    overflow: hidden;transition: all 0.3s linear;
+
+    &:hover {
+        width: 2%;
+    }
 
     @media screen and (min-width: 767px) {
         display: none;
