@@ -20,22 +20,29 @@
 }
 
 .section-contacts {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: start;
-    align-items: center;
-    padding: 60px 20px;
+    @media screen and (min-width: 480px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
 }
 
-.contact-item {
+.contact-item,
+.footer-messenger {
     margin: 30px 20px;
-    @media screen and (min-width: 320px) and (max-width: 480px) {
-        display: none;
-    }
 }
 
 .mobile-link {
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    @media screen and (min-width: 480px) {
+        gap: 30px;
+        flex-direction: column;
+    }
 }
 
 .icon {
@@ -47,40 +54,16 @@
     box-shadow: -2px -2px 6px #9b986f, 2px 2px 4px #9b986f;
     margin: 0 10px 0 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--main-color);
 
     &:hover {
         background-color: #9b986f;
         border: 1px solid #B38B59;
         box-shadow: 0 5px 7px -1px rgba(51, 51, 51, .23);
         box-shadow: -3px -3px 7px #B38B59, 3px 3px 5px #B38B59;
+        fill: var(--light-color);
     }
     
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-        display: none;
-    }
-}
-
-.mobile-item {
-    border-radius: 20%;
-        padding: 5px;
-        background-color: #B38B59;
-        border: 1px solid #9b986f;
-        box-shadow: 0 2px 6px -1px rgba(51, 51, 51, .23);
-        box-shadow: -2px -2px 6px #9b986f, 2px 2px 4px #9b986f;
-        margin: 0 10px 0 0;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover {
-        background-color: #9b986f;
-        border: 1px solid #B38B59;
-        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, .23);
-        box-shadow: -3px -3px 7px #B38B59, 3px 3px 5px #B38B59
-    }
-
-    @media screen and (min-width: 480px) {
-        display: none;
-    }
-        
 }
 
 .contact-icon {
@@ -96,9 +79,6 @@
         color: var(--accent-color);
     }
 
-    // @media screen and (min-width: 320px) and (max-width: 479px) {
-    //     display: none;
-    // }
 }
 
 .contact-icon:last-child {
