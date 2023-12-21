@@ -53,15 +53,16 @@
 }
 
 .slider .prev {
-    left: 10px;
-    filter: invert(100%);
-    height: 25px;
+    left: 5px;
+    filter: invert(60%);
+    height: 40px;
 
     &:hover,
     &:focus {
-        border: 2px solid #0f247e;
-        box-shadow: 2px 2px 10px #132059;
-        background-color: #0f247e;
+        border: 2px solid var(--accent-color);
+        box-shadow: 2px 2px 10px #000000;
+        background-color: var(--accent-color);
+        filter: invert(10%);
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -70,24 +71,28 @@
 
         &:hover,
         &:focus {
-            border: 2px solid #0f247e;
-            box-shadow: 2px 2px 10px #132059;
-            background-color: #0f247e;
+            border: 2px solid var(--accent-color);
+            box-shadow: 2px 2px 10px #000000;
+            background-color: var(--accent-color);
+            filter: invert(10%);
         }
+        
     }
 
 }
 
 .slider .next {
-    right: 10px;
-    filter: invert(100%);
-    height: 25px;
+    right: 5px;
+    filter: invert(60%);
+    height: 40px;
 
     &:hover,
     &:focus {
-        border: 2px solid #0f247e;
-        box-shadow: 2px 2px 10px #132059;
-        background-color: #0f247e;
+        border: 2px solid var(--accent-color);
+        box-shadow: 2px 2px 10px #000000;
+        background-color: var(--accent-color);
+        filter: invert(10%);
+        
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -96,9 +101,10 @@
         
         &:hover,
         &:focus {
-            border: 2px solid #0f247e;
-            box-shadow: 2px 2px 10px #132059;
-            background-color: #0f247e;
+            border: 2px solid var(--accent-color);
+            box-shadow: 2px 2px 10px #000000;
+            background-color: var(--accent-color);
+            filter: invert(10%);
         }
         
     }
@@ -125,7 +131,7 @@
 }
 
 .project-skill-item {
-    background-color: rgba(179, 138, 89, 0.374);
+    background-color: #d4c5b3;
     border: 2px solid var(--accent-color);
     border-radius: 20px;
     padding: 5px 8px;
@@ -142,13 +148,14 @@
 
 .pet-projects-item img {
     border-radius: 25px;
-    border: 2px solid var(--accent-color);
+    border: 3px solid var(--decoration-color);
+    box-shadow: inset -4px -4px 8px rgba(179, 138, 89, 0.589), inset 4px 4px 8px #b38a599c;
     padding: 15px;
 
     &:hover,
     &:focus {
-        border: 2px solid #beb96c;
-        box-shadow: 5px 5px 10px #beb96c;
+        border: 3px solid var(--accent-color);
+        box-shadow: -4px -4px 8px rgba(179, 138, 89, 0.589), 4px 4px 8px #b38a599c;
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
