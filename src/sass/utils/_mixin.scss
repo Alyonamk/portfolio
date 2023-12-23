@@ -1,0 +1,46 @@
+@mixin font($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin border($b, $br) {
+    border: $b;
+    border-radius: $br;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+
+@mixin animation($a, $aic, $ad) {
+    animation: $a;
+    animation-iteration-count: $aic;
+    animation-delay: $ad;
+}
+
+@keyframes my-name {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-10px)
+    }
+}
+
+@mixin text($ts, $tt, $ta) {
+    text-shadow: $ts;
+    text-transform: $tt;
+    text-align: $ta;
+}
+
+
+// @include text(600, null, null, null);
+// @include text(2px 2px 2px var(--decoration-color), null, null);

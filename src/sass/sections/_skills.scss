@@ -4,37 +4,43 @@
 }
 
 .skill-title {
-    display: flex;
-    align-items: center;
+    @extend %align-element;
+    // display: flex;
+    // align-items: center;
     flex-direction: row-reverse;
     gap: 30px;
     color: var(--main-color);
-    text-transform: uppercase;
-    font-size: 30px;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    // text-transform: uppercase;
+    // font-size: 30px;
+    @include font(null, 30px, null, null);
+    @include text(3px 3px 5px rgb(0, 0, 0), uppercase, null);
+    // text-shadow: 3px 3px 5px rgb(0, 0, 0);
     margin-right: 12%;
     padding: 50px 0;
 
     &::after {
         content: '';
-        width: 80px;
-        height: 2px;
+        // width: 80px;
+        // height: 2px;
+        @include size(80px, 2px);
         background-color: var(--main-color);
         transform: translateY(100%);
         box-shadow: 2px 2px 5px rgb(0, 0, 0);
     }
 
     @media screen and (max-width: 767px) {
-        font-size: 24px;
+        // font-size: 24px;
+        @include font(null, 24px, null, null);
         gap: 20px;
     }
 
 }
 
 .skill-list {
-    display: flex;
+    @extend %align-element;
+    // display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 
@@ -54,17 +60,20 @@
     // width: calc((85% - 60px)/3);
     position: relative;
     overflow: hidden;
-    display: flex;
+    // display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    @extend %align-element;
     flex-direction: row;
     background-color: var(--accent-color);
     box-shadow: inset -3px -3px 7px #76546d, inset 3px 3px 5px #af9898;
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
+    @include size(200px, 200px);
     transition: .35s;
     cursor: pointer;
-    border-radius: 50%;
+    // border-radius: 50%;
+    @include border(null, 50%);
 
     &:hover .skill-description-text {
         transform: translateY(0);
@@ -72,8 +81,9 @@
 
     img {
         display: inline;
-        width: 80px;
-        height: 80px;
+        // width: 80px;
+        // height: 80px;
+        @include size(80px, 80px);
         @media screen and (min-width: 480px) and (max-width: 767px) {
             width: 70px;
             height: 70px;
@@ -92,12 +102,14 @@
 
 
 .skill-description-text {
-    display: flex;
+    @extend %align-element;
+    // display: flex;
     padding-left: 10px;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     position: absolute;
-    font-size: 14px;
+    // font-size: 14px;
+    @include font(null, 14px, null, null);
     background: var(--light-color);
     position: absolute;
     height: calc(100% + 1px);
@@ -117,12 +129,15 @@
 .skill-name {
     font-family: 'Lobster', sans-serif;
     color: var(--light-color);
-    text-shadow: 2px 2px 3px rgb(0, 0, 0);
-    font-size: 26px;
+    // text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    @include text(2px 2px 3px rgb(0, 0, 0), null, null);
+    // font-size: 26px;
+    @include font(null, 26px, null, null);
 }
 
 .skill-description {
-    text-align: center;
+    // text-align: center;
+    @include text(null, null, center);
 }
 
 .skill-item:nth-child(1) {

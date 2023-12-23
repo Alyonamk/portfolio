@@ -7,10 +7,13 @@
     backdrop-filter: blur(40px);
     width: 80%;
     height: 100%;
-    overflow: hidden;transition: all 0.3s linear;
+    // @include size(80%, 100%);
+    overflow: hidden;
+    transition: all 0.3s linear;
 
     &:hover {
         width: 2%;
+        // @include size(2%, null);
     }
 
     @media screen and (min-width: 767px) {
@@ -23,26 +26,30 @@
 }
 
 .burger-head {
-    display: flex;
+    @extend %align-element;
+    // display: flex;
     justify-content: flex-end;
-    align-items: center;
+    // align-items: center;
     margin: 15px 0;
 }
 
 .burger-modal-close-btn {
     fill: #B38B59;
     background-color: transparent;
-    border: none;
+    // border: none;
+    @include border(none, null);
 }
 
 .burger-list {
-    text-align: center;
+    // text-align: center;
+    @include text(null, null, center);
     margin-top: 50px;
 }
 
 .burger-item {
-    font-weight: 600;
-    font-size: 30px;
+    @include font(600, 30px, null, null);
+    // font-weight: 600;
+    // font-size: 30px;
     transition: all 0.2s linear;
     padding-bottom: 20px;
 

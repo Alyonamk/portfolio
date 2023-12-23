@@ -4,10 +4,12 @@
 }
 
 .nav {
-    display: flex;
+    @extend %align-element;
+    // display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 60px;
+    // align-items: center;
+    // height: 60px;
+    @include size(null, 60px);
 }
 
 .drawer {
@@ -17,21 +19,25 @@
 
 .logo-text {
     font-family: Lobster;
-    font-size: 36px;
+    @include font(null, 36px, null, null);
+    // font-size: 36px;
     color: #B38B59;
-    text-shadow: 2px 2px 2px var(--decoration-color);
+    // text-shadow: 2px 2px 2px var(--decoration-color);
+    @include text(2px 2px 2px var(--decoration-color), null, null);
 }
 
 
 
 .menu {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 1.25;
-    display: flex;
+    @extend %align-element;
+    @include font(600, 22px, 1.25, null);
+    // font-weight: 600;
+    // font-size: 22px;
+    // line-height: 1.25;
+    // display: flex;
     gap: 30px;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -41,11 +47,13 @@
 .menu-link {
     color: var(--light-color);
     transition: 0.3s;
-    text-shadow: 4px 6px 6px rgb(0, 0, 0);
+    // text-shadow: 4px 6px 6px rgb(0, 0, 0);
+    @include text(4px 6px 6px rgb(0, 0, 0), null, null);
     &:hover,
     &:focus {
         color: var(--accent-color);
-        text-shadow: 4px 6px 6px rgb(0, 0, 0);
+        // text-shadow: 4px 6px 6px rgb(0, 0, 0);
+        @include text(4px 6px 6px rgb(0, 0, 0), null, null);
     }
 }
 

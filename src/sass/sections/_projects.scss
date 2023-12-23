@@ -3,16 +3,18 @@
 }
 
 .projects-title {
-    display: flex;
-    align-items: center;
+    @extend %align-element;
+    // display: flex;
+    // align-items: center;
     justify-content: center;
 }
 
 .slider {
-    width: 700px;
+    // width: 700px;
     position: relative;
     overflow: hidden;
-    height: 680px;
+    // height: 680px;
+    @include size(700px, 680px);
     z-index: 2;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -21,14 +23,16 @@
     }
 
     @media screen and (min-width: 320px) and (max-width: 479px) {
-        width: 280px;
-        height: 530px;
+        // width: 280px;
+        // height: 530px;
+        @include size(280px, 530px);
     }
 }
 
 .slider-project {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
+    @include size(100%, 100%);
     position: absolute;
     top: 0;
     opacity: 0;
@@ -49,7 +53,8 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    border-radius: 20px;
+    // border-radius: 20px;
+    @include border(null, 20px);
 }
 
 .slider .prev {
@@ -59,7 +64,8 @@
 
     &:hover,
     &:focus {
-        border: 2px solid var(--accent-color);
+        // border: 2px solid var(--accent-color);
+        @include border(2px solid var(--accent-color), null);
         box-shadow: 2px 2px 10px #000000;
         background-color: var(--accent-color);
         filter: invert(10%);
@@ -67,11 +73,13 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         left: 1px;
-        height: 20px;
+        // height: 20px;
+        @include size(null, 20px);
 
         &:hover,
         &:focus {
-            border: 2px solid var(--accent-color);
+            // border: 2px solid var(--accent-color);
+            @include border(2px solid var(--accent-color), null);
             box-shadow: 2px 2px 10px #000000;
             background-color: var(--accent-color);
             filter: invert(10%);
@@ -84,11 +92,13 @@
 .slider .next {
     right: 5px;
     filter: invert(60%);
-    height: 40px;
+    // height: 40px;
+    @include size(null, 40px);
 
     &:hover,
     &:focus {
-        border: 2px solid var(--accent-color);
+        // border: 2px solid var(--accent-color);
+        @include border(2px solid var(--accent-color), null);
         box-shadow: 2px 2px 10px #000000;
         background-color: var(--accent-color);
         filter: invert(10%);
@@ -97,11 +107,13 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         right: 1px;
-        height: 20px;
+        // height: 20px;
+        @include size(null, 20px);
         
         &:hover,
         &:focus {
-            border: 2px solid var(--accent-color);
+            // border: 2px solid var(--accent-color);
+            @include border(2px solid var(--accent-color), null);
             box-shadow: 2px 2px 10px #000000;
             background-color: var(--accent-color);
             filter: invert(10%);
@@ -117,11 +129,13 @@
 
 .project-name {
     color: var(--main-color);
-    font-size: 30px;
+    // font-size: 30px;
+    @include font(null, 30px, null, null);
     font-family: 'Lobster', sans-serif;
     text-decoration: underline;
     @media screen and (min-width: 320px) and (max-width: 479px) {
-        font-size: 24px;
+        // font-size: 24px;
+        @include font(null, 24px, null, null);
     }
    
 }
@@ -132,40 +146,46 @@
 
 .project-skill-item {
     background-color: #d4c5b3;
-    border: 2px solid var(--accent-color);
-    border-radius: 20px;
+    // border: 2px solid var(--accent-color);
+    // border-radius: 20px;
+    @include border(2px solid var(--accent-color), 20px);
     padding: 5px 8px;
     margin: 5px 8px;
 
 }
 
 .project-skill {
-    display: flex;
-    align-items: center;
+    @extend %align-element;
+    // display: flex;
+    // align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .pet-projects-item img {
-    border-radius: 25px;
-    border: 3px solid var(--decoration-color);
+    // border-radius: 25px;
+    // border: 3px solid var(--decoration-color);
+    @include border(3px solid var(--decoration-color), 25px);
     box-shadow: inset -4px -4px 8px rgba(179, 138, 89, 0.589), inset 4px 4px 8px #b38a599c;
     padding: 15px;
 
     &:hover,
     &:focus {
-        border: 3px solid var(--accent-color);
+        // border: 3px solid var(--accent-color);
+        @include border(3px solid var(--accent-color), null);
         box-shadow: -4px -4px 8px rgba(179, 138, 89, 0.589), 4px 4px 8px #b38a599c;
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        border: none;
+        // border: none;
+        @include border(none, null);
         box-shadow: none;
         padding: 25px;
         
         &:hover,
         &:focus {
-            border: none;
+            // border: none;
+            @include border(none, null);
             box-shadow: none;
         }
     }
@@ -174,5 +194,6 @@
 }
 
 .project-picture {
-    border-radius: 20px;
+    // border-radius: 20px;
+    @include border(null, 20px);
 }
